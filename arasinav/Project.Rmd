@@ -1,0 +1,61 @@
+---
+title: "Hepatit Olan Hastalarda Ölüm İçin Risk Faktörleri"
+author: 
+  - İlayda Çiçek[^1]
+bibliography: ../bibliography/biblio.bib
+csl: ../csl/apa-tr.csl
+header-includes:
+  - \usepackage{polyglossia}
+  - \setmainlanguage{turkish}
+  - \usepackage{booktabs}
+  - \usepackage{caption} 
+  - \captionsetup[table]{skip=10pt}
+output:
+  bookdown::pdf_document2:
+    fig_caption: yes
+    fig_height: 3
+    fig_width: 4
+    keep_tex: no
+    latex_engine: xelatex
+    number_sections: yes
+    toc: no
+geometry: margin=1in
+link-citations: yes
+urlcolor: blue
+fontsize: 12pt
+biblio-style: apalike
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(cache = FALSE, echo = TRUE, message = FALSE, warning = FALSE)
+```
+
+<!-- ======================================================================= -->
+<!-- ============================== NOTLAR ================================= -->
+<!-- ======================================================================= -->
+[^1]: 21080183, [Github Repo](https://github.com/ilaydaacicek/arasinav)
+
+# Giriş
+
+Hepatit, karaciğerdeki normal dokunun akut olarak hasarlandığı ve işlevinin bozulduğu bir durumdur. Siroz, alkol kullanımı, hepatit B veya C enfeksiyonu, yağlı karaciğer hastalığı, otoimmün hastalıklar ve diğer nedenlerden kaynaklanabilir.
+
+Hepatitin erken evrelerinde belirtileri olmayabilir, ancak hastalık ilerledikçe yorgunluk, Bulantı ve kusma, karın ağrısı ve şişlik ve kilo kaybı gibi bulgular gösterebilir. Belirgin bir tedavisi olmaması ve altta yatan nedenini tedavi edilmesi hasta yaşamını uzatır.  Hastanın ciddiyeti ve ölüm riskini düşündüren bulgular olarak yükse karaciğer enzimleri, yüksek bilirubin seviyesi, düşük albumin seviyesi, yüksek amonyak seviyes, ve düşük protrombin zamanı gib laboratuvar bulguları vardır. Ayrıca varislerinin olması, karaciğeri büyümesi de hastalığın ciddiyetini gösterir.  Laboratuvar bulgularındaki deişikliklerin erken tanınmasıyla hastalığın şiddeti değerlendirilip önceden önlem alabilmek mümkündür.  
+
+## Çalışmanın Amacı
+Klinik ve laboratuvar bulguları verilen hepatit hastalarında ölümü öngörecek bağımsız değişkenler incelenmek istendi.  Veriseti, Makine Öğrenmesi Sitesi'nde bulunan Hepatit Veriseti kullanıldı (hepatitis).  Veriseti 155 gözlem sayısı ve biri bağımlı değişken (yaşar/ölür) ve 19 bağımsız değişken olarak toplamda 20 depişken mevcuttu. azaltıldığı için sayısı azaltıldı.   
+
+## Literatür 
+Hepatit olan hastalarda kötü gidişatı ve ölümü gösteren risk faktörlerini araştıran çalışmalar tıp liteartüründe bulunmaktadır.  Hindistan'da yapılan bir çalışmada hepatit olan hastaların %44.6'sının öldüğü ve böbrek yetmezliği, iyon bozukluğu olan hastalarda ölüm oranının daha yüksek olduğu görülmüştür.  Başka bir çalışmada ise hepatit virusu taşıyan kişilerde ölüm riskinin daha fazla bulunmuştur (chen2010carriers).  Alkole bağlı hepatit hastalarında ise yüksk bilirubin seviyesi, düşük kan seviyelerinin ölüm oranını arttırdığına dair bulgular da saptanmıştır (lourens2017acute).
+
+\newpage
+# Kaynakça {#references}
+
+Hepatitis Data Set. web sayfası: https://archive.ics.uci.edu/ml/datasets/Hepatitis. Erişim tarihi: 12.04.2023
+
+Radha Krishna, Y., Saraswat, V. A., Das, K., Himanshu, G., Yachha, S. K., Aggarwal, R., & Choudhuri, G. (2009). Clinical features and predictors of outcome in acute hepatitis A and hepatitis E virus hepatitis on cirrhosis. Liver International, 29(3), 392-398.
+
+Chen, J. D., Yang, H. I., Iloeje, U. H., You, S. L., Lu, S. N., Wang, L. Y., ... & Chen, C. J. (2010). Carriers of inactive hepatitis B virus are still at risk for hepatocellular carcinoma and liver-related death. Gastroenterology, 138(5), 1747-1754.
+
+Lourens, S., Sunjaya, D. B., Singal, A., Liangpunsakul, S., Puri, P., Sanyal, A., ... & Orosz, A. (2017). Acute alcoholic hepatitis: natural history and predictors of mortality using a multicenter prospective study. Mayo Clinic Proceedings: Innovations, Quality & Outcomes, 1(1), 37-48.
+
+<div id="refs"></div>
+
